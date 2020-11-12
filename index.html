@@ -4,27 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>H-Man!</title>
+    <title>Space-Man!</title>
 </head>
 <body>
     <header>
         <h1>
-            H-Man!
+            Space-Man!
         </h1>
     </header>
     <main>
         <h2>
             Welcome to our game! To play, just click on the letters below to make a guess. If you complete the word within
-            the amount of turns, you win!
+            the amount of turns, you win! But, if you don't, you'll be abducted!
         </h2>
+        <section id="stick-figure"></section>
         <section id="word-blank"></section><br><br>
         <!-- <section id="alphabet-section"></section> -->
         <section id="guess-section">
             <label for="guess">Enter your guess here!</label><br>
             <input type="text" id="guess" name="guess" maxlength="1"><br><br>
             <button id="guess-button" onclick="checkForWin()">Go!</button>
-        </section>
-        <section id="turns-remaining"></section>
+        </section><br>
+        <section id="turns-remaining">Turns Remaining: 6</section>
     </main>
     <script src="myscripts.js"></script>
 </body>
