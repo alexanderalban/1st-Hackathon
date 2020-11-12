@@ -1,7 +1,9 @@
+
 let regularWordArray = ["elephant", "octopus", "parrot"];
 let wordArray = [];
 let blanksArray = [];
-let testArray = [];
+let testArray = blanksArray;
+
 let turns = 6;
 
 let chooseWord = () => {
@@ -33,7 +35,7 @@ const checkForWin = () => {
             document.getElementById("word-blank").innerHTML = blanksArray.join(' ');
             console.log(blanksArray.join(' '));
         }
-    }
+
     if (blanksArray.join(' ').includes(guess)) {
         console.log("Great Guess!")
     } else {
