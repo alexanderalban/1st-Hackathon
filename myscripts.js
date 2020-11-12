@@ -1,19 +1,21 @@
-class HWord {
-    constructor(word, hint, encouragement) {
-        this.word = word;
-        this.hint = hint;
-        this.encouragement = encouragement;
-    }
-};
+// class HWord {
+//     constructor(word, hint, encouragement) {
+//         this.word = word;
+//         this.hint = hint;
+//         this.encouragement = encouragement;
+//     }
+// };
 
-const elephant = new HWord("elephant", "long nose and big ears", "You can do it!");
-const parrot = new HWord("parrot", "flies and can talk", "You've got this!");
-const octopus = new HWord("octopus", "has eight legs and swims", "You can do the thing!");
+// const elephant = new HWord("elephant", "long nose and big ears", "You can do it!");
+// const parrot = new HWord("parrot", "flies and can talk", "You've got this!");
+// const octopus = new HWord("octopus", "has eight legs and swims", "You can do the thing!");
 
 // let wordArray = [elephant, parrot, octopus];
 let regularWordArray = ["elephant", "octopus", "parrot"];
 let wordArray = [];
 let blanksArray = [];
+let testArray = blanksArray;
+let turns = 6;
 
 let chooseWord = () => {
     return regularWordArray[Math.floor(Math.random() * regularWordArray.length)];
@@ -43,7 +45,25 @@ const checkForWin = () => {
             document.getElementById("word-blank").innerHTML = blanksArray.join(' ');
         }
     }
+    if(blanksArray.join('').includes(guess)){
+        console.log('Great Guess!')
+    } else {
+        turns--;
+        document.getElementById('turns-remaining').innerHTML = 'Turns Remaining ' + turns;
+        if (turns === 0){
+            alert('Out of turns! U R Ded. ')
+        }
+    }
 }
+
+    // if(newArray === originalArray){
+    //     turns--;
+    //     document.getElementById('turns-remaining').innerHTML = "Turns Remaining " + turns;
+    //     if(turns === 0){
+    //         alert('Out of turns! U R Ded.')
+    //     }
+    // }
+
 
 
 
