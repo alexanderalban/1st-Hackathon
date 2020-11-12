@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 let regularWordArray = ["elephant", "octopus", "parrot"];
 let wordArray = [];
 let blanksArray = [];
@@ -11,17 +12,18 @@ let testArray = [];
 //         this.encouragement = encouragement;
 //     }
 // };
+=======
+>>>>>>> d471b6ea1f1c6d4c7440c61857de1811822c9498
 
-// const elephant = new HWord("elephant", "long nose and big ears", "You can do it!");
-// const parrot = new HWord("parrot", "flies and can talk", "You've got this!");
-// const octopus = new HWord("octopus", "has eight legs and swims", "You can do the thing!");
-
-// let wordArray = [elephant, parrot, octopus];
 let regularWordArray = ["elephant", "octopus", "parrot"];
 let wordArray = [];
 let blanksArray = [];
 let testArray = blanksArray;
+<<<<<<< HEAD
 >>>>>>> d83d666261a9cb93e5fba1637a8320439e4c9494
+=======
+
+>>>>>>> d471b6ea1f1c6d4c7440c61857de1811822c9498
 let turns = 6;
 
 let chooseWord = () => {
@@ -53,8 +55,12 @@ const checkForWin = () => {
             document.getElementById("word-blank").innerHTML = blanksArray.join(' ');
             console.log(blanksArray.join(' '));
         }
+<<<<<<< HEAD
     }
 <<<<<<< HEAD
+=======
+
+>>>>>>> d471b6ea1f1c6d4c7440c61857de1811822c9498
     if (blanksArray.join(' ').includes(guess)) {
         console.log("Great Guess!")
     } else {
@@ -64,6 +70,7 @@ const checkForWin = () => {
             alert("Out of turns! U R Ded.")
         }
     }
+<<<<<<< HEAD
 };
 =======
     if(blanksArray.join('').includes(guess)){
@@ -109,3 +116,6 @@ const checkForWin = () => {
 // alphaButtons();
 
 >>>>>>> d83d666261a9cb93e5fba1637a8320439e4c9494
+=======
+};
+>>>>>>> d471b6ea1f1c6d4c7440c61857de1811822c9498
